@@ -431,7 +431,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 38px;
-  padding-bottom: 180px;
+  padding-bottom: 175px;
 }
 
 .header__logo {
@@ -472,7 +472,7 @@ body {
 }
 
 .block-text {
-  max-width: calc(93% - 500px);
+  max-width: calc(97% - 500px);
   color: #fff;
   margin-left: 55px;
 }
@@ -496,8 +496,6 @@ body {
   display: block;
   color: #65e496;
   font-size: 18px;
-  line-height: 44px;
-  vertical-align: 50px;
   margin-bottom: 45px;
 }
 
@@ -505,7 +503,6 @@ body {
   font-family: "Open Sans";
   font-size: 18px;
   letter-spacing: 0.7px;
-  line-height: 44px;
   margin-bottom: 30px;
 }
 
@@ -515,6 +512,7 @@ body {
   line-height: 24px;
   margin-bottom: 24px;
   letter-spacing: 0.7px;
+  vertical-align: 50px;
 }
 
 .block-text__btn {
@@ -526,7 +524,8 @@ body {
   border-radius: 3px;
   text-align: center;
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-top: 45px;
+  margin-bottom: 20px;
   padding: 14px 0;
   letter-spacing: 0.7px;
 }
