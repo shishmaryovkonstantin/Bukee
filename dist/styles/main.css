@@ -861,7 +861,6 @@ template {
   max-width: 250px;
   margin-top: 45px;
   margin-bottom: 19px;
-  max-width: 250px;
 }
 
 .block-text small {
@@ -977,7 +976,6 @@ body {
   display: block;
   color: #fff;
   text-decoration: none;
-  max-width: 140px;
   border-radius: 3px;
   text-align: center;
   font-size: 18px;
