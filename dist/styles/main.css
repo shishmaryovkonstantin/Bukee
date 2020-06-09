@@ -925,6 +925,111 @@ body {
   margin: 0;
 }
 
+.block-text {
+  max-width: calc(97% - 500px);
+  color: #fff;
+}
+
+.block-text--width {
+  flex-basis: calc(93% - 500px);
+}
+
+.block-text__tittle {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  margin-bottom: 10px;
+}
+
+.block-text__tittle span {
+  display: block;
+  color: #65e496;
+  font-size: 18px;
+  margin-top: 10px;
+  letter-spacing: 0.9px;
+}
+
+.block-text__subtittle {
+  display: block;
+  color: #65e496;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.block-text__name {
+  font-family: "Open Sans";
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  margin-bottom: 30px;
+}
+
+.block-text__description {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  letter-spacing: 0.7px;
+  vertical-align: 50px;
+}
+
+.block-text__btn {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  max-width: 140px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  padding: 11px 0 15px 0;
+  background: linear-gradient(to top left, #65e49b, #65e4b0);
+  letter-spacing: 0.7px;
+}
+
+.block-text small {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: italic;
+}
+
+.block-text-item {
+  margin-bottom: 55px;
+}
+
+.block-text-item__date {
+  font-size: 15px;
+  font-family: "Open Sans";
+  letter-spacing: 0.8px;
+  margin-bottom: 4px;
+}
+
+.block-text-item__tittle {
+  font-size: 18px;
+  letter-spacing: 0.9px;
+  margin-bottom: 16px;
+}
+
+.block-text-item__desc {
+  font-size: 15px;
+  font-family: "Open Sans";
+  letter-spacing: 0.75px;
+}
+
+.block-text-item__btn {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  padding: 11px 0 15px 0;
+  background: linear-gradient(to top left, #65e49b, #65e4b0);
+  letter-spacing: 0.7px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -970,70 +1075,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-.block-text {
-  max-width: calc(97% - 500px);
-  color: #fff;
-  margin-left: 0;
-}
-
-.block-text__tittle {
-  font-size: 48px;
-  font-weight: 700;
-  letter-spacing: 1.8px;
-  margin-bottom: 10px;
-}
-
-.block-text__tittle span {
-  display: block;
-  color: #65e496;
-  font-size: 18px;
-  margin-top: 10px;
-  letter-spacing: 0.9px;
-}
-
-.block-text__subtittle {
-  display: block;
-  color: #65e496;
-  font-size: 18px;
-  margin-bottom: 45px;
-}
-
-.block-text__name {
-  font-family: "Open Sans";
-  font-size: 18px;
-  letter-spacing: 0.7px;
-  margin-bottom: 30px;
-}
-
-.block-text__description {
-  font-family: "Open Sans";
-  font-size: 15px;
-  line-height: 24px;
-  margin-bottom: 24px;
-  letter-spacing: 0.7px;
-  vertical-align: 50px;
-}
-
-.block-text__btn {
-  display: block;
-  background-color: #65e496;
-  color: #fff;
-  text-decoration: none;
-  max-width: 250px;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 18px;
-  margin-top: 45px;
-  margin-bottom: 20px;
-  padding: 14px 0;
-  letter-spacing: 0.7px;
-}
-
-.block-text small {
-  font-family: "Open Sans";
-  font-style: italic;
-}
-
 .block-book {
   display: flex;
   justify-content: flex-start;
@@ -1059,8 +1100,11 @@ body {
   letter-spacing: 1px;
 }
 
-.block-book__text .block-text__btn {
+.block-book__textblock-text__btn {
   margin-bottom: 14px;
+  background: linear-gradient(to top left, #65e49b, #65e4b0);
+  letter-spacing: 0.7px;
+  box-shadow: 0 -2px #58b988 inset;
 }
 
 .block-book-demo {
@@ -1114,8 +1158,6 @@ body {
 
 .block-author .block-text {
   color: #000;
-  padding-top: 12px;
-  margin-left: 0;
 }
 
 .block-author .block-text__name {
@@ -1133,11 +1175,13 @@ body {
 
 .block-author .block-text__btn {
   max-width: 240px;
+  background: linear-gradient(to top left, #65e49b, #65e4b0);
+  letter-spacing: 0.7px;
+  box-shadow: 0 -2px #b2f1be inset;
 }
 
-.block-author .block-ava {
-  width: 482px;
-  height: 558px;
+.block-author .block-text--width {
+  margin-left: 168px;
 }
 
 .block-author .block-ava__img {
@@ -1149,6 +1193,17 @@ body {
 
 .block-author .block-ava__svg {
   padding-left: 47px;
+}
+
+.block-author .block-ava__img--left {
+  width: 435px;
+  height: 606px;
+  padding-top: 49px;
+  padding-left: 50px;
+}
+
+.block-author .block-ava__svg--left {
+  padding-left: 0;
 }
 
 .block-counter {
@@ -1201,6 +1256,9 @@ body {
   width: 135px;
   margin-top: 35px;
   border: none;
+  background: linear-gradient(to top left, #65e49b, #65e4b0);
+  letter-spacing: 0.7px;
+  box-shadow: 0 -2px #b2f1be inset;
 }
 
 .block-about-text .feature {
@@ -1310,5 +1368,72 @@ body {
   margin-right: auto;
   margin-top: 75px;
   max-width: 220px;
+  background: linear-gradient(to top left, #65e49b, #65e4b0);
+  letter-spacing: 0.7px;
+  box-shadow: 0 -2px #b2f1be inset;
+}
+
+.block-text--width {
+  margin-left: 168px;
+  padding-top: -12px;
+}
+
+.block-text-item__btn {
+  max-width: 135px;
+  margin-top: 27px;
+}
+
+.block-text {
+  margin-left: 0;
+}
+
+.block-testimotionals {
+  background-image: url("../img/Bg/testimotionals-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0 0;
+}
+
+.block-testimotionals {
+  width: 100%;
+  height: 627px;
+  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.block-testimotionals .block-about-text {
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block-testimotionals .block-about-text .block-text__tittle {
+  font-size: 24px;
+  color: #65e496;
+  letter-spacing: 0.8px;
+  margin-bottom: 5px;
+}
+
+.block-testimotionals .block-about-text .block-text__name {
+  font-size: 15px;
+  letter-spacing: 0px;
+  color: #9191b5;
+}
+
+.block-testimotionals .block-about-text .block-text__description {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  color: #9191b5;
+}
+
+.block-testimotionals .block-about-text .block-text__nav {
+  margin-top: 60px;
 }
 /*# sourceMappingURL=maps/main.css.map */
