@@ -1180,6 +1180,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 82px;
+  padding-bottom: 230px;
 }
 
 .block-about h3 {
@@ -1204,7 +1205,7 @@ body {
 
 .block-about-text .feature {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
   height: 25px;
   align-items: center;
   vertical-align: middle;
@@ -1213,6 +1214,7 @@ body {
 .block-about-text .feature .feature-tittle {
   font-family: "Roboto Slab";
   font-weight: 700;
+  letter-spacing: 3px;
 }
 
 .block-about-text .feature-list {
@@ -1266,5 +1268,47 @@ body {
   background-color: #5fc9b2;
   color: #fff;
   padding: 0px 7px;
+}
+
+.other-books {
+  padding-top: 160px;
+}
+
+.other-books .page-tittle {
+  margin-top: 155px;
+}
+
+.other-books__image {
+  margin-bottom: 25px;
+}
+
+.other-books__list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  text-align: center;
+  padding-top: 75px;
+  padding-left: 0;
+}
+
+.other-books__item .block-about__text p {
+  font-family: "Open Sans";
+  font-size: 15px;
+  margin-top: 15px;
+  max-width: 330px;
+  margin-bottom: 25px;
+}
+
+.other-books__link {
+  color: #65e496;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.other-books .block-text__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  max-width: 220px;
 }
 /*# sourceMappingURL=maps/main.css.map */
