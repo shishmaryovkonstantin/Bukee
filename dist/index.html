@@ -35,8 +35,9 @@
 		data-mce-href="img/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" href="img/Favicon/favicon-16x16.png" sizes="16x16"
 		data-mce-href="img/favicon/favicon-16x16.png">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@400;700&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab:wght@100;400;700&display=swap"
 		rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -59,8 +60,14 @@
 			</div>
 			<div class="container">
 				<div class="block-book">
-					<div><img src="img/Books/book.png" alt="" class="block-book-demo"></div>
-					<div class="block-text">
+					<div class="block-book-demo">
+						<h2 class="block-book-demo__tittle">
+							Good book
+							<span>Don’t judge a book by its cover</span>
+						</h2>
+						<p class="block-book-demo__author">- By Emma Anderson</p>
+					</div>
+					<div class="block-text block-book__text">
 						<p class="block-text__name">- By Emma Anderson</p>
 						<h1 class="block-text__tittle">BUKEE: THE BOOK</h1>
 						<span class="block-text__subtittle">A room without books is like a body without a soul</span>
@@ -80,29 +87,37 @@
 	<div class="page">
 		<div class="wrap">
 			<div class="block-author">
-				<p class="block-text__name">- Book Author</p>
-				<h2 class="block-text__tittle">Emma Anderson
-					<span class="block-text__subtittle">A room without books is like a body without a soul</span>
-				</h2>
-				<p class="block-text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-					laboris
-					nisi ut aliquip ex ea commodo consequat. </p>
-				<p class="block-text__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-					eu
-					fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-					mollit
-					anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-				</p>
-				<a href="" class="block-text__btn">Read full biography</a>
+				<div class="block-text">
+					<p class="block-text__name">- Book Author</p>
+					<h2 class="block-text__tittle">Emma Anderson
+						<span class="block-text__subtittle">A room without books is like a body without a soul</span>
+					</h2>
+					<p class="block-text__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+						ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p class="block-text__description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+						dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+						deserunt mollit anim id est laborum. Sed ut</p>
+					<a href="" class="block-text__btn">Read full biography</a>
+				</div>
+				<div class="block-ava">
+					<img class="block-ava__img" src="../img/People/author.png" alt="">
+					<svg class="block-ava__svg" width="435" height="558">
+						<linearGradient id="gradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="435" y2="558">
+							<stop offset="0" style="stop-color:#446a87" />
+							<stop offset="1" style="stop-color:#59c2ae" />
+						</linearGradient>
+						<rect width="435" height="558" x="0" y="0" fill="url(#gradient)"></rect>
+					</svg>
+				</div>
 			</div>
-			<div></div>
 		</div>
 		<div class="block-counter">
-			<p><span>12</span>Total published books</p>
-			<p><span>5</span>Happy readers</p>
-			<p><span>15, 000</span>Happy readers</p>
+			<div class="wrap">
+				<p><span>12</span>Total published books</p>
+				<p><span>5</span>Happy readers</p>
+				<p><span>15, 000</span>Happy readers</p>
+			</div>
 		</div>
 	</div>
 	</div>
@@ -111,60 +126,53 @@
 			<h2 class="page__tittle">Book contents</h2>
 			<p class="page__subtittle">Let’s see what we have covered in the book</p>
 			<div class="block-about">
-				<div>
+				<div class="block-about-text">
 					<h3>About the book</h3>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
 						dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex
 						ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu
 						fugiat nulla pariatur.</p>
-					<div>
-						<p>Featured in:</p>
-						<ul>
-							<li>
-								<a href=""></a>
+					<div class="feature">
+						<p class="feature-tittle">Featured in:</p>
+						<ul class="feature-list">
+							<li class="feature-list__item">
+								<a class="featured-list__link" href="https://stackoverflow.com/" target="_blank">
+									<i class="fab fa-stack-overflow feature-list__icon"></i>
+								</a>
+							</li>
+							<li class="feature-list__item">
+								<a class="featured-list__link" href="https://www.amazon.com/" target="_blank">
+									<i class="fab fa-amazon feature-list__icon"></i>
+								</a>
 							</li>
 							<li>
-								<a href=""></a>
-							</li>
-							<li>
-								<a href=""></a>
-							</li>
+								<a class="featured-list__link" href="https://sass-lang.com/" target="_blank">
+									<i class="fab fa-sass feature-list__icon"></i>
+								</a>
+							</li class="feature-list__item">
 						</ul>
 					</div>
 				</div>
-				<div>
+				<div class="block-about-table">
 					<h3>Table of contents</h3>
-					<ol>
-						<li>1. Lorem ipsum dolor sit amet</li>
-						<li>2. Consectetur adipisicing elit</li>
-						<li>3. Labore et dolore magna</li>
-						<li>4. Consectetur adipisicing elit</li>
-						<li>5. Labore et dolore magna</li>
-						<li>6. Lorem ipsum dolor sit amet</li>
-						<li>7. Consectetur adipisicing elit</li>
-						<li>8. Labore et dolore magna</li>
-						<li>9. Consectetur adipisicing elit</li>
-						<li>10. Labore et dolore magna</li>
+					<ol class="block-about-table__list">
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
 					</ol>
-					<button>More</button>
+					<button class="block-text__btn block-about-text__btn">More</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<img src="img/Bg/author-bg .jpg" alt="">
-	<img src="img/People/author.png" alt="">
 	</div>
-	</div>
-	<div class="block-achievements">
-		<div class="block-achievements__item">
-			<p class="block-text__goals"><span class="block-text__number">12</span>Total published books</p>
-		</div>
-		<div class="block-achievements__item">
-			<p class="block-text__goals"><span class="block-text__number">5</span>Written books</p>
-		</div>
-		<div class="block-achievements__item">
-			<p class="block-text__goals"><span class="bloc-textk__number">15,000</span>Happy readers</p>
-		</div>
 	</div>
 	<script src="js/main.js"></script>
 	<script src="js/vendor.js"></script>

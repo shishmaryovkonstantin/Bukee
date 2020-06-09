@@ -876,15 +876,43 @@ p {
   margin: 0;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 body {
   font-family: "Roboto Slab", serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.page__tittle {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.page__subtittle {
+  color: #65e496;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.9px;
+}
+
+.page--grey {
+  padding-top: 160px;
+  background-color: #f5f6fa;
+}
+
+.page--grey .block-about-text p {
+  letter-spacing: 0.8px;
 }
 
 .page-main {
   background-image: url("../img/Bg/top-section-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 50px;
 }
 
 .wrap {
@@ -945,7 +973,7 @@ body {
 .block-text {
   max-width: calc(97% - 500px);
   color: #fff;
-  margin-left: 55px;
+  margin-left: 0;
 }
 
 .block-text__tittle {
@@ -1009,10 +1037,30 @@ body {
 .block-book {
   display: flex;
   justify-content: flex-start;
+  padding-bottom: 110px;
 }
 
 .block-book__text {
   color: #fff;
+}
+
+.block-book__text .block-text__name {
+  margin-bottom: 41px;
+}
+
+.block-book__text .block-text__tittle {
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.block-book__text .block-text__subtittle {
+  margin-top: 0;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.block-book__text .block-text__btn {
+  margin-bottom: 14px;
 }
 
 .block-book-demo {
@@ -1022,9 +1070,40 @@ body {
   background-image: url("../img/Books/book.png");
   background-repeat: no-repeat;
   flex-basis: 500px;
-  padding-bottom: 110px;
   padding-left: 0;
   margin-left: 0;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.block-book-demo__tittle {
+  font-size: 36px;
+  position: absolute;
+  top: 122px;
+  left: 133px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.block-book-demo__tittle span {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #65e496;
+  display: block;
+  position: absolute;
+  top: 33px;
+  text-transform: none;
+  width: 225px;
+}
+
+.block-book-demo__author {
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #65e496;
+  position: absolute;
+  bottom: 52px;
+  left: 88px;
+  letter-spacing: 0.7px;
 }
 
 .block-author {
@@ -1035,15 +1114,20 @@ body {
 
 .block-author .block-text {
   color: #000;
-  padding-top: 18px;
+  padding-top: 12px;
   margin-left: 0;
 }
 
 .block-author .block-text__name {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .block-author .block-text__tittle {
+  margin-bottom: 42px;
+}
+
+.block-author .block-text__tittle span {
+  margin-top: 24px;
   margin-bottom: 0;
 }
 
@@ -1068,7 +1152,7 @@ body {
 }
 
 .block-counter {
-  margin-top: 140px;
+  margin-top: 170px;
   margin-bottom: 160px;
 }
 
@@ -1083,12 +1167,104 @@ body {
   font-size: 18px;
 }
 
-.block-counter span {
+.block-counter p span {
   font-family: "Roboto Slab";
   display: block;
   font-weight: 100;
   font-size: 80px;
   color: #65e496;
-  margin-bottom: 12px;
+  margin-bottom: 45px;
+}
+
+.block-about {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 82px;
+}
+
+.block-about h3 {
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+
+.block-about p {
+  font-family: "Open Sans";
+  letter-spacing: 0.6px;
+}
+
+.block-about-text {
+  flex-basis: 41%;
+}
+
+.block-about-text__btn {
+  width: 135px;
+  margin-top: 35px;
+  border: none;
+}
+
+.block-about-text .feature {
+  display: flex;
+  margin-top: 20px;
+  height: 25px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.block-about-text .feature .feature-tittle {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+}
+
+.block-about-text .feature-list {
+  display: flex;
+  list-style-type: none;
+  padding-left: 23px;
+  padding-top: 5px;
+}
+
+.block-about-text .feature-list__item {
+  margin-right: 12px;
+}
+
+.block-about-text .feature-list__icon {
+  font-size: 18px;
+  color: #65e496;
+}
+
+.block-about-table {
+  flex-basis: 49%;
+}
+
+.block-about-table__list {
+  margin: 25px 0 0 0;
+  padding: 0;
+  counter-reset: list;
+  column-count: 2;
+}
+
+.block-about-table__list > li {
+  position: relative;
+  padding-left: 37px;
+  counter-increment: list;
+  list-style-type: none;
+  margin-bottom: 8px;
+  letter-spacing: 0.7px;
+}
+
+.block-about-table__list > li::before {
+  content: counter(list) ". ";
+}
+
+.block-about-table__list > li::after {
+  content: "+";
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 22px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  background-color: #5fc9b2;
+  color: #fff;
+  padding: 0px 7px;
 }
 /*# sourceMappingURL=maps/main.css.map */
