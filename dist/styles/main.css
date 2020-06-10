@@ -1571,4 +1571,72 @@ body {
   letter-spacing: 0.7px;
   box-shadow: 0 -2px #b2f1be inset;
 }
+
+.footer {
+  background-color: #44444f;
+  color: #9191b5;
+  padding: 155px 0;
+}
+
+.block-footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans";
+}
+
+.block-footer > div {
+  max-width: 375px;
+}
+
+.block-footer > p {
+  letter-spacing: 1px;
+}
+
+.block-footer__logo {
+  display: block;
+  width: 137px;
+  height: 28px;
+  background-image: url("../img/Logo/Footer-logo.png");
+  margin-bottom: 25px;
+}
+
+.block-footer__logo > p {
+  max-width: 365px;
+}
+
+.block-footer__tittle {
+  font-family: "Roboto Slab";
+  font-size: 18px;
+  color: #65e496;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+  padding-top: 7px;
+}
+
+.block-footer__list {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.block-footer__social {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 15px;
+}
+
+.block-footer__social > li {
+  margin-right: 12px;
+}
+
+.block-footer__social > li > a {
+  color: #65e496;
+}
+
+.block-footer__copyright {
+  margin-top: 25px;
+}
 /*# sourceMappingURL=maps/main.css.map */
