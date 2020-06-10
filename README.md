@@ -3,4 +3,4 @@
 #### Разработка началась: 08.06.2020
 #### Разработка завершена: .06.2020
 ### [Ccсылка на сайт](https://shishmaryovkonstantin.github.io/Bukee/dist/index.html)
-![preview](../02_preview.jpg)
+![preview](../master/02_preview.jpg)
