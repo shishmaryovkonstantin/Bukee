@@ -1396,54 +1396,112 @@ body {
   margin-left: 0;
 }
 
-.block-testimotionals {
-  background-image: url("../img/Bg/testimotionals-bg.png");
-  background-repeat: no-repeat;
+.block-slider {
+  background-image: url("Bg/testimotionals-bg.png");
   background-size: 100%;
+  background-repeat: no-repeat;
   background-position: 0 0;
-}
-
-.block-testimotionals {
-  width: 100%;
-  height: 695px;
-  margin-top: 160px;
-  margin-left: auto;
-  margin-right: auto;
   text-align: center;
-  padding-top: 225px;
 }
 
-.block-testimotionals .block-about-text {
-  max-width: 1000px;
-  text-align: center;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.block-testimotionals .block-about-text .block-text__tittle {
-  font-size: 24px;
+.block-slider h3 {
   color: #65e496;
-  letter-spacing: 0.8px;
-  margin-bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  letter-spacing: 1.5px;
 }
 
-.block-testimotionals .block-about-text .block-text__name {
-  font-size: 15px;
-  letter-spacing: 0px;
+.block-slider__desc {
   color: #9191b5;
-}
-
-.block-testimotionals .block-about-text .block-text__description {
+  font-family: "Open Sans";
+  line-height: 27px;
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
-  color: #9191b5;
 }
 
-.block-testimotionals .block-about-text .block-text__nav {
-  margin-top: 60px;
+.block-slider-ava {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: block;
+  margin: 0 auto 27px;
+}
+
+.block-slider__expert {
+  letter-spacing: 0.75px;
+  margin-bottom: 32px;
+}
+
+.block-slider-ava {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: block;
+  margin: 0 auto 0;
+}
+
+.block-slider-bg {
+  position: absolute;
+  display: block;
+  background-image: url("../img/Icons/feedback.png");
+  background-repeat: no-repeat;
+  height: 42px;
+  width: 48px;
+  top: 0;
+  right: -15px;
+}
+
+.block-slider-thumb {
+  display: block;
+  margin: 0 auto 27px;
+  position: relative;
+  overflow: hidden;
+  width: 152px;
+  height: 152px;
+  border-radius: 100%;
+}
+
+.block-slider-thumb img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.slick-dots > li {
+  margin: 0 5px;
+}
+
+.slick-dots > li > button {
+  text-indent: -9999px;
+  width: 8px;
+  height: 8px;
+  border: none;
+  background-color: #65e496;
+  border-radius: 100%;
+  line-height: 8px;
+  font-size: 0px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.slick-dots > li > button:focus {
+  outline: none;
+}
+
+.slick-dots > li.slick-active > button {
+  height: 8px;
+  width: 37px;
+  border-radius: 10px;
 }
 
 .block-blog {
