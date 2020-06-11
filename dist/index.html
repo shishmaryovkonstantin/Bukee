@@ -61,13 +61,7 @@
 			</div>
 			<div class="container">
 				<div class="block-book">
-					<div class="block-book-demo">
-						<h2 class="block-book-demo__tittle">
-							Good book
-							<span>Don’t judge a book by its cover</span>
-						</h2>
-						<p class="block-book-demo__author">- By Emma Anderson</p>
-					</div>
+					<img class="block-book-demo" src="img/Books/book.webp" alt="">
 					<div class="block-text block-book__text">
 						<p class="block-text__name">- By Emma Anderson</p>
 						<h1 class="block-text__tittle">BUKEE: THE BOOK</h1>
@@ -167,7 +161,19 @@
 						<li>Consectetur adipisicing elit</li>
 						<li>Labore et dolore magna</li>
 					</ol>
-					<button class="block-text__btn block-about-text__btn">More</button>
+					<ol id="nextContentList" class="block-about-table__list block-about-table__list--next">
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+						<li>Consectetur adipisicing elit</li>
+						<li>Labore et dolore magna</li>
+					</ol>
+					<button id="nextContent" class="block-text__btn block-about-text__btn">More</button>
 				</div>
 			</div>
 		</div>
@@ -365,7 +371,6 @@
 			</div>
 		</div>
 	</div>
-
 	<footer class="footer">
 		<div class="wrap">
 			<div class="block-footer">
@@ -415,6 +420,13 @@
 			</div>
 		</div>
 	</footer>
+
+
+
+
+
+
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/main.js"></script>
@@ -424,6 +436,10 @@
 				dots: true,
 				arrows: false,
 			});
+		});
+		$("#nextContent").click(function () {
+			$("#nextContentList").fadeIn();
+			$("#nextContent").hide();
 		});
 	</script>
 </body>
